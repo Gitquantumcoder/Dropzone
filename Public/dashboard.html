@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropzone | My files</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <header class="top-navigation">
+    <a class="logo dark-logo" href="/dashboard"><span>+</span> Dropzone</a>
+    <div class="user-area"><span id="user-email">Loading...</span><button id="logout" class="text-button" type="button">Log out</button></div>
+  </header>
+  <main class="dashboard-content">
+    <div class="dashboard-heading">
+      <div><p class="small-label">Your workspace / 01</p><h1>Documents<br><em>storage.</em></h1></div>
+      <p class="heading-note">One calm place for all the things<br>you want to keep close.</p>
+    </div>
+    <div class="dashboard-grid">
+      <section class="upload-section">
+        <div class="section-heading"><h2>Upload a file</h2><span class="file-limit">Max 5 MiB</span></div>
+        <form id="upload-form">
+          <div id="drop-area" class="drop-area">
+            <div class="upload-icon">↑</div><h3>Drop your file here</h3>
+            <p>or <label class="browse-link" for="myFile">choose from your device</label></p>
+            <input id="myFile" name="myFile" type="file" hidden>
+          </div>
+          <p id="file-name" class="selected-file">No file selected</p>
+          <button class="button primary-button upload-button" type="submit">Upload to cloud</button>
+        </form>
+        <p class="form-message" id="upload-message" role="status"></p>
+      </section>
+      <section class="files-section">
+        <div class="section-heading">
+          <h2 id="files-heading">My files</h2>
+          <div class="file-actions">
+            <button id="all-files" class="text-button accent-button" type="button" hidden>All files</button>
+            <button id="refresh-files" class="text-button accent-button" type="button">Refresh</button>
+          </div>
+        </div>
+        <ul id="files" class="file-list"><li class="empty-files">Your uploaded files will appear here.</li></ul>
+      </section>
+    </div>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>

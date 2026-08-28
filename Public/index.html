@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropzone | Welcome</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <main class="login-layout">
+    <section class="login-art">
+      <div class="logo light-logo"><span>+</span> Dropzone</div>
+      <div class="art-copy">
+        <p class="small-label">A home for your files</p>
+        <h1>Keep your<br><em>ideas</em> close.</h1>
+        <p>Store your important files in the cloud and find them whenever you need them.</p>
+      </div>
+      <div class="shape shape-orange"></div><div class="shape shape-lime"></div>
+      <div class="shape shape-pink"></div><div class="shape shape-blue"></div>
+    </section>
+    <section class="login-form-area">
+      <div class="login-form-box">
+        <div class="logo dark-logo"><span>+</span> Dropzone</div>
+        <p class="small-label" id="form-eyebrow">Welcome back</p>
+        <h2 id="form-title">Sign in to your<br>second brain.</h2>
+        <p class="form-intro" id="form-intro">Your files are waiting for you.</p>
+        <form id="login-form">
+          <div class="signup-only" hidden>
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="Alex Morgan" autocomplete="name">
+          </div>
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="At least 8 characters" autocomplete="current-password" required>
+          <button class="button primary-button" id="submit-button" type="submit">Log in</button>
+        </form>
+        <div class="or-line"><span>or</span></div>
+        <button class="button outline-button" id="show-register" type="button">Create a new account</button>
+        <button class="button outline-button" id="show-login" type="button" hidden>Back to log in</button>
+        <p class="form-message" id="login-message" role="status"></p>
+      </div>
+      <p class="footer-note">Simple file storage for work, school, and life.</p>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>
