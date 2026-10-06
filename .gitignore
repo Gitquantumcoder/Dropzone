@@ -5,3 +5,4 @@ Uploads/*
 *.log
 npm-debug.log*
 Metadata.md
+.vscode/
