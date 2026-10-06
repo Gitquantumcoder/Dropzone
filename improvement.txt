@@ -1,4 +1,0 @@
-1.great the project is working but on first time signup there is no option for the name and rather a dialogue box appears for name input which dont look good at all.
-2.also after login there is no option for me to use getmyfiles and no option for me as an admin to get all files 
-3.also i need a small div to display that i logged in with a perticular email id at top right corner beside the logout option
-4.i want clicking any where in the file div under the refresh to open it rather by clicking at exact file name

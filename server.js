@@ -5,8 +5,8 @@ const app = require('./src/app');
 
 const port = process.env.PORT || 3000;
 
-if (!process.env.MONGODB_URI) {
-    console.error('Missing MONGODB_URI. Copy .env.example to .env and add your MongoDB connection string.');
+if (!process.env.MONGODB_URL) {
+    console.error('Missing MONGODB_URL. Copy .env.example to .env and add your MongoDB connection string.');
     process.exit(1);
 }
 
@@ -15,7 +15,7 @@ if (!process.env.JWT_SECRET) {
     process.exit(1);
 }
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URL)
     .then(() => app.listen(port, () => console.log(`Server started at: port-${port}`)))
     .catch((error) => {
         console.error('MongoDB connection failed:', error.message);

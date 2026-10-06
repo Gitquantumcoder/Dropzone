@@ -4,3 +4,4 @@ Uploads/*
 !Uploads/.gitkeep
 *.log
 npm-debug.log*
+Metadata.md
